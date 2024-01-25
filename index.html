@@ -4,16 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celebrate your glory</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/94b974a5f7.js" crossorigin="anonymous"></script>
+   
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                   'color1':"#FF4240",
+                }
+                }
+              }
+            }
+          </script>
+          
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+          
+    <style>
+        .manrope{ font-family: 'Manrope', sans-serif;}
+       
+    </style>
+
 </head>
+
 <body>
     <header>
+        <div class="navbar bg-base-100 my-3 px-5 lg:my-12 lg:px-36">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>                 
+                  <li><a>Contact</a></li>
+                  <li><a><i class="fa-solid fa-magnifying-glass "></i></a></li>
+                  
+
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl manrope font-extrabold">Hockey<span class="text-color1">’</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 flex items-center gap-x-9 font-bold manrope">
+                <li><span class="text-color1">Home</span></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+               
+              </ul>
+            </div>
+            <div class="navbar-end flex">
+           
+                    <i class="fa-solid fa-magnifying-glass hidden lg:flex text-[#89898B]"></i>
+                
+              <a class="btn text-white  bg-color1 mx-6 manrope font-bold">Get Ticket</a>
+            </div>
+          </div>
+        
+            <div class=" relative carousel w-3/4 mx-5 ml-14 mb-6 lg:w-3/4 lg:mx-36 lg:ml-44 lg:mb-24">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./Images/1.png"class= "w-full" />
+                  <div id="slide1" class="absolute flex gap-2
+                  transform-translate-y-1/2 left-[130px]  top-[70%]
+                    lg:justify-between lg:transform-translate-y-1/2 lg:left-5 lg:right-5 lg:top-1/2 ">
+                    
+                    <a href="#slide2" class="btn btn-circle lg:absolute lg:top-[450%] text-white bg-black">❮</a> 
+                    <a href="#slide2" class="btn btn-circle lg:relative lg:top-[216px] lg:left-16 text-white bg-black">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+            
+                  <img src="./Images/4.png" class="w-full" />
+                  <div id="slide2" class="absolute flex  gap-2 
+                  transform-translate-y-1/2 left-[130px]  top-[70%]
+                    lg:justify-between lg:transform-translate-y-1/2 lg:left-5 lg:right-5 lg:top-1/2 ">
+                    <a href="#slide1" class="btn btn-circle  relative lg:absolute  lg:top-[450%] text-white bg-black">❮</a> 
+                    <a href="#slide1" class="btn btn-circle   lg:relative lg:top-[216px] lg:left-16 text-white bg-black">❯</a>
+                  </div>
+               
+        
+               
+               
+                </div>
+
+
+               <div class="hidden lg:block  absolute  lg:absolute lg:top-[70%] lg:left-[46%] lg:rounded-2xl lg:bg-black lg:text-white lg:manrope lg:w-1/2 lg:p-4 ">
+                <h3 class="font-extrabold    text-2xl mb-2 ">Meet all the heroes from the field</h3>
+                <p>Forget capes and costumes, the real heroes walk among us. Let's celebrate the heroes of the field, whose ordinary lives weave an extraordinary tapestry of humanity.
+                </p>
+               </div>
+               </div>
+               <div class="rounded-xl bg-black text-white manrope w-3/4 ml-14 p-3  lg:hidden ">
+                <h3 class="font-extrabold    text-lg mb-2  ">Meet all the heroes from the field</h3>
+                <p class="text-sm">Forget capes and costumes, the real heroes walk among us. Let's celebrate the heroes of the field, whose ordinary lives weave an extraordinary tapestry of humanity.
+                </p></div>
 
     </header>
-    <main>
 
+    <main class="mx-10 lg:mx-36 ">
+        <section>
+            <hr class="border-y-2 mb-6 mt-10 border-t border-dashed text-gray-700">
+            <div class="text-center">
+                <h2 class="text-2xl lg:text-4xl  font-extrabold manrope mb-6">Professional Hockeys Club</h2>
+                <p class="manrope">Ice gladiators clash, pucks fly, cheers erupt. Dreams chased, goals scored, legends made. <br> Welcome to the heart of professional hockey.
+                </p>
+                <hr class="border-y-2 mt-8 mb-12 border-t border-dashed text-gray-700">
+
+            </div>
+            <div class="flex flex-col gap-6 lg:flex-row lg:gap-28 lg:pb-24">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="w-28 h-28 border-8 rounded-full border-red-500 manrope text-3xl font-extrabold  flex items-center justify-center mb-6">87%</h1>
+                    <h4 class="manrope text-xl font-semibold mb-4">Prayer Facility</h4>
+                    <p class="manrope w-56">
+                        Where champions hone skills, sweat, and glory unite.
+
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center"> 
+                    <h1 class="w-28 h-28 border-8 rounded-full border-green-400 manrope text-3xl font-extrabold  flex items-center justify-center mb-6">95%</h1>
+                    <h4 class="manrope text-xl font-semibold mb-4">Experienced Coach</h4>
+                    <p class="manrope w-56">
+                        Where champions hone skills, sweat, and glory unite.
+
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="w-28 h-28 border-8 rounded-full border-yellow-500 manrope text-3xl font-extrabold  flex items-center justify-center mb-6">90%</h1>
+                    <h4 class="manrope text-xl font-semibold mb-4">Senior Player</h4>
+                    <p class="manrope w-56">
+                        Veteran heart, steady hand, guiding the young through fire. 
+
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="w-28 h-28 border-8 rounded-full border-blue-500 manrope text-3xl font-extrabold  flex items-center justify-center mb-6">80%</h1>
+                    <h4 class="manrope text-xl font-semibold mb-4">Training Ground</h4>
+                    <p class="manrope w-56">
+                        Where sweat sows seeds, and champions bloom. 
+
+
+                    </p>
+          
+                </div>
+                  
+            </div> 
+            <hr class="border-y-2 mb-6 mt-10 lg:mb-8  border-t border-dashed text-gray-700">
+        </section>
+        <section>
+            <div class="text-center">
+                <h2 class="text-2xl lg:text-4xl  font-extrabold manrope mb-6">Program Sections</h2>
+                <p class="manrope">Program's hidden world unveiled: data fortresses, code labyrinths, logic cathedrals. Each section, a brick in the digital edifice,<br> crafting experiences unseen, yet powering every click, swipe, and tap. Explore program sections, where technology's true magic resides.
+
+                </p>
+                <hr class="border-y-2 mt-8  mb-12 border-t border-dashed text-gray-700">
+
+            </div>
+            <div class="flex flex-col lg:flex-row gap-2 lg:gap-12 mb-2 lg:mb-10">
+                <div class="bg-[url('./Images/2.png')]  lg:w-[573px] lg:h-[338px] h-[244px] pl-5 pt-10 bg-coverlg:pl-10 lg:pt-24"
+                >
+            <h4 class="manrope lg:text-3xl text-2xl font-extrabold text-white lg:mb-4 mb-1">
+                Junior Program
+            </h4>
+            <p class="manrope text-white  lg:mb-6 mb-1">
+                Budding minds take flight, fueled by curiosity and boundless <br> dreams. Junior programs: launching pads for tomorrow's trailblazers.
+
+            </p >
+            <a class="btn text-white border-0 bg-color1  manrope font-bold text-xl">Register Now!</a>
+            </div>
+                <div class="bg-[url('./Images/3.png')]  lg:w-[573px] lg:h-[338px] h-[244px] pl-5 pt-10 bg-cover lg:pl-10 lg:pt-24"
+                >
+            <h4 class="manrope lg:text-3xl text-2xl font-extrabold text-white lg:mb-4 mb-1">
+                Teenager Program
+            </h4>
+            <p class="manrope text-white lg:mb-6 mb-1">
+                Teenage dreams collide with real world code. Build skills, spark <br> passions, code your future. Teen program ignites potential. 
+
+
+            </p >
+            <a class="btn text-white border-0 bg-color1  manrope font-bold text-xl">Register Now!</a>
+            </div>
+              
+            </div>
+            <div class="bg-[url('./Images/4.png')] w-[330px] lg:w-auto lg:h-[450px] h-[284px] bg-cover pl-5 pt-10 mb-1 lg:pl-10 lg:pt-44 ;g:mb-24 ml-1 mr-9"
+            >
+        <h4 class="manrope text-2xl lg:text-3xl font-extrabold text-white mb-1 lg:mb-4">
+          Professional Program
+        </h4>
+        <p class="manrope text-white mb-1 lg:mb-6">
+          Master craft, not quick fix. Professional program forges honed skills, unshakeable confidence,<br> career-launching momentum. Invest in mastery, reap rewards for life. 
+
+
+
+        </p >
+        <a class="btn text-white border-0 bg-color1  manrope font-bold text-xl">Register Now!</a>
+        </div>
+        </section>
+      
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
